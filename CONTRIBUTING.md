@@ -14,10 +14,3 @@ Use Node.js 22 or newer. Run `npm start` from the project directory and open htt
 
 ## Manual verification
 
-1. Add a task and confirm that whitespace-only input does not create one.
-2. Complete a task and check the All, Active, and Completed filters.
-3. Refresh the page and confirm tasks are restored.
-4. Delete a task, then use Clear completed and check the remaining count.
-5. Check the layout on a narrow screen and operate the app using the keyboard.
-
-Describe your changes and the checks you performed when submitting a contribution.
