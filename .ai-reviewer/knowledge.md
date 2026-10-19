@@ -1,5 +1,3 @@
-# prysta-cleaner reviewer notes
-
 ## Architecture
 
 Everyday is a dependency-free browser to-do app served by a small Node.js server. `app.js` owns UI state and event wiring, while `tasks.js`, `storage.js`, and `dom.js` separate task operations, persistence, and rendering as documented in `CONTRIBUTING.md`. The project uses native ES modules for the application and Node’s built-in test runner and syntax checks.

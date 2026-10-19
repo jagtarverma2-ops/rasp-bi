@@ -52,7 +52,7 @@ test('server serves app assets and survives malformed URLs', { timeout: 10000 },
     });
   }
   assert.equal((await request('http://[')).status, 400);
-  for (const path of ['/', '/app.js', '/tasks.js', '/storage.js', '/dom.js', '/styles.css']) {
+  for (const path of ['/', '/app.js', '/tasks.js', '/task-title.js', '/task-actions.js', '/task-filter.js', '/storage.js', '/dom.js', '/styles.css']) {
     const response = await request(path);
     assert.equal(response.status, 200, path);
     assert.ok(response.body.length > 0, path);

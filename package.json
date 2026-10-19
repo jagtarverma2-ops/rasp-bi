@@ -4,7 +4,8 @@
   "type": "module",
   "scripts": {
     "start": "node server.js",
-    "build": "node --check server.js && node --check app.js && node --check tasks.js && node --check storage.js && node --check dom.js",
+    "build": "node --check server.js && node --check app.js && node --check tasks.js && node --check task-title.js && node --check task-actions.js && node --check task-filter.js && node --check storage.js && node --check dom.js",
+    "score": "node --input-type=module -e \"import { getTaskScore } from './tasks.js'; const result = getTaskScore(); console.log('Score: ' + result.score + '/' + result.total); for (const check of result.checks) console.log((check.passed ? 'PASS: ' : 'FIX: ') + check.name);\"",
     "test": "node --test"
   },
   "engines": {
